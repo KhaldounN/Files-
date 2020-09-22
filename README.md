@@ -13,7 +13,6 @@ if you input a date that program will search in the database for the information
  professor : Guillermo Alonso
  
  students name : 
-         Sangmoo.Park
-         Khaldoun Al-naierat 
+         Sangmoo.Park , Khaldoun Al-naierat 
          
          
