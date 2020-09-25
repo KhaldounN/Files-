@@ -13,9 +13,9 @@ class Weather_prediction():
             if time == self.date[i][0]:
                 Local_holder = i
         for k in reversed(range(1,8)):
-            seven_days_temp.append(self.date[Local_holder - k][3])
+            seven_days_temp.append(self.date[Local_holder - k][2])
             seven_days_rain.append(self.date[Local_holder - k][1])
-            seven_days_claud.append(self.date[Local_holder - k][4])
+            seven_days_claud.append(self.date[Local_holder - k][3])
         return seven_days_temp , seven_days_rain , seven_days_claud
     def predict_weather_for(self,time):
         temp , rain , claud = self.get_weather_7days(time)

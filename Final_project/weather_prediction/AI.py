@@ -14,9 +14,9 @@ class AI_parsing():
             l_rain = []
             l_claud = []
             for j in range(8):
-                l_temp.append(int((self.date[i+j][3])))
+                l_temp.append(int((self.date[i+j][2])))
                 l_rain.append(int((self.date[i+j][1])))
-                l_claud.append(int((self.date[i+j][4])))
+                l_claud.append(int((self.date[i+j][3])))
             self.temp_data.insert(i,l_temp)
             self.rain_data.insert(i,l_rain)
             self.claud_data.insert(i,l_claud)
