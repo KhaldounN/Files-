@@ -1,18 +1,18 @@
-# Weather Prediction 
- Weather Prediction 
+# Weather Prediction
+ Weather Prediction
 
 
-this is a group project for students in Barcelona technology school. 
+go to final project file to access to actual project. all files out of the final project folder is for experiments
 
-the idea is to use KNeighborsClassifier to predict weather (rain level , temprature, claud level).
+this is a group project for students in Barcelona technology school.
 
-if you input a date that program will search in the database for the information about the last 7 days and create prediction based on it .
+the idea is to use KNeighborsClassifier to predict weather by using the previous 7 days data   (rain level , temprature, claud level).
+
+in the file called PDF you can see the project infrastructure.
 
 
 
  professor : Guillermo Alonso
- 
- students name : 
-         Sangmoo.Park , Khaldoun Al-naierat 
-         
-         
+
+ students name :
+         Sangmoo.Park , Khaldoun Al-naierat
