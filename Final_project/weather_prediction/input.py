@@ -19,10 +19,20 @@ class dates():
         self.day = input()
         if self.validate(self.day):
 
-            if int(self.day) >= self.protect1 and int(self.day) <= self.protect2:
+
+            # if the final data is the end day of month. Then it should be the first day of month
+            if self.validate(str(self.protect2)) == False:
+                self.protect2 -= 1
+                new = datetime.datetime.strptime(str(self.protect2), '%Y%m%d')
+                next_day = new + datetime.timedelta(days=1)
+                self.protect2 = str(next_day.year) + str(0) + str(next_day.month) + str(0) + str(next_day.day)
+                print(self.protect2)
+
+            if int(self.day) >= self.protect1 and int(self.day) <= int(self.protect2):
                 return self.day
             else:
                 print("Outside of data")
                 self.daysBefore()
+
         else:
             self.daysBefore()

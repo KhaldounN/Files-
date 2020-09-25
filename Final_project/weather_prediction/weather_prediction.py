@@ -49,5 +49,5 @@ interface.print_interface()
 
 #### Real Data from 20150108 to today(20200925)
 for i in range(len(date)):
-    if date[i][0].startswith(day_output):
-        print(date[i])t
+    if date[i][0].startswith(str(day_output)):
+        print(date[i])
