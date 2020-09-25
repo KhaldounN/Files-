@@ -25,8 +25,13 @@ class dates():
                 self.protect2 -= 1
                 new = datetime.datetime.strptime(str(self.protect2), '%Y%m%d')
                 next_day = new + datetime.timedelta(days=1)
-                self.protect2 = str(next_day.year) + str(0) + str(next_day.month) + str(0) + str(next_day.day)
-                print(self.protect2)
+
+                if int(next_day.month) < 10 :
+                    self.protect2 = str(next_day.year) + str(0) + str(next_day.month) + str(0) + str(next_day.day)
+                    #print(self.protect2)
+                else:
+                    self.protect2 = str(next_day.year) + str(next_day.month) + str(0) + str(next_day.day)
+                    #print(self.protect2)
 
             if int(self.day) >= self.protect1 and int(self.day) <= int(self.protect2):
                 return self.day
